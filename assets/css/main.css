@@ -2,6 +2,7 @@ body {
   background: #000000;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to left, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to left, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: 'Raleway', sans-serif !important;
 }
 
 .bgimage {
@@ -16,7 +17,7 @@ body {
     height: 400px;
     font-weight: 300;
     color: white;
-    margin-bottom: 40px;
+    margin-bottom: 0px;
 }
 
 #headerinfo {
@@ -57,4 +58,23 @@ body {
 #headermail {
   font-size: 14px;
   font-weight: 300;
+}
+
+#social-icons {
+  margin-top: 1vmin;
+}
+
+.hrcolored {
+  margin-top: 0px;
+  margin-bottom: 50px;
+  height: 5px;
+  border-top: 0;
+  border-radius: 5px;
+  background: #c4e17f;
+  background-image: linear-gradient(to right, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%,
+    #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%,
+    #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+  padding-right: 50%;
+  background-origin: content-box;
+  background-size: 200%;
 }
