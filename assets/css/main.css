@@ -14,7 +14,7 @@ body {
   padding-top: 50px;
   background: #ecede8;
   background-image: url('../imgs/chor.jpg');
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   font-family: 'Raleway', sans-serif;
 }
 
@@ -75,6 +75,20 @@ body {
   padding-bottom: 2px;
 }
 
+.time {
+  color: rgb(205, 170, 90);
+}
+
+.posi {
+  color: rgb(151, 183, 114);
+  font-size: 12pt;
+  font-weight: 400;
+}
+
+.place {
+  color: rgb(0, 0, 0);
+}
+
 .hrcolored {
   margin-top: 0px;
   height: 5px;
@@ -104,4 +118,9 @@ body {
 
 .ui.cards > .card {
   margin-bottom: 0px;
+}
+
+.ui.center.aligned.images {
+  margin-top: 2.5vmin;
+  margin-bottom: 2vmin;
 }

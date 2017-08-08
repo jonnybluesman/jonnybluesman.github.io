@@ -20,7 +20,7 @@
         <img src="assets/imgs/jaco2.png" class="ui small card image imgjaco">
         <div id="headertext">
           <p id="headername">Jacopo de Berardinis</p>
-          <p id="headerrole">Researcher at Unicam SMoL</p>
+          <p id="headerrole">Research Assistant at University of Camerino</p>
           <!-- <p id="headermail">jacopo.deberardinis _at_ unicam.it</p> -->
           <div id="social-icons">
             <!-- Email reference --->
@@ -51,11 +51,13 @@
         </h3>
         <hr class="hrcolored-v2">
         <div class="ui raised attached very padded text segment">
-          <p>Te eum doming eirmod, nominati pertinacia argumentum ad his. Ex eam
-            alia facete scriptorem, est autem aliquip detraxit at. Usu ocurreret
-            referrentur at, cu epicurei appellantur vix. Cum ea laoreet recteque
-            electram, eos choro alterum definiebas in. Vim dolorum definiebas an.
-            Mei ex natum rebum iisque.</p>
+          <p>Born and raised in Ascoli Piceno (IT), I recently earned a Master
+            Degree from the University and Camerino and from Reykjavik University
+            as part of a Double Degree Programme in Computer Science. Passionate
+            about AI, Machine Learning and Deep Learning, I am currently working
+            on the Tangramob project together with my former MSc supervisors and
+            some fellow students.
+          </p>
           <p>Audiam quaerendum eu sea, pro omittam definiebas ex. Te est latine
             definitiones. Quot wisi nulla ex duo. Vis sint solet expetenda ne, his
             te phaedrum referrentur consectetuer. Id vix fabulas oporteat, ei quo
@@ -70,15 +72,21 @@
         <hr class="hrcolored-v2">
         <div class="ui raised attached very padded container justified segment">
           <!-- <h2 class="ui header">Timeline</h2> -->
-          <p>Te eum doming eirmod, nominati pertinacia argumentum ad his. Ex eam
-            alia facete scriptorem, est autem aliquip detraxit at. Usu ocurreret
-            referrentur at, cu epicurei appellantur vix. Cum ea laoreet recteque
-            electram, eos choro alterum definiebas in. Vim dolorum definiebas an.
-            Mei ex natum rebum iisque.</p>
-          <p>Audiam quaerendum eu sea, pro omittam definiebas ex. Te est latine
-            definitiones. Quot wisi nulla ex duo. Vis sint solet expetenda ne, his
-            te phaedrum referrentur consectetuer. Id vix fabulas oporteat, ei quo
-            vide phaedrum, vim vivendum maiestatis in.</p>
+          <p>
+            <span class="time">2017 - Now</span>
+            <span class="posi">Research Assistant</span>
+            <span class="place">at the University of Camerino: advancing and
+            improving <a href="https://www.tangramob.com">Tangramob</a>
+            (AB Simulation, Reinforcement Learning)</span>
+            <br>
+            <span class="time">2014 - 2016</span>
+            <span class="posi">MSc in Computer Science</span>
+            <span class="place">Double Degree Program: University of Camerino and Reykjavik University</span>
+            <br>
+            <span class="time">2011 - 2014</span>
+            <span class="posi">BSc in Computer Science</span>
+            <span class="place">University of Camerino</span>
+          </p>
         </div>
 
         <h3 class="ui top attached inverted header">
@@ -89,16 +97,88 @@
         <hr class="hrcolored-v2">
 
         <!-- Tangramob project card: one row -->
-        <div class="ui one stackable doubling link cards">
+        <div class="ui one stackable doubling cards">
           <!-- Tangramob ..................................... -->
-          <div class="green card">
+          <div class="ui green card">
             <div class="content">
-              <div class="header">Tangramob</div>
+              <a class="header" href="https://www.tangramob.com">Tangramob</a>
               <div class="meta">
                 <a>Keywords: Smart Mobility, AB Simulations, Reinforcement Learning</a>
               </div>
               <div class="description">
-                Description of Tangramob...
+                <p> Estimating the effects of introducing a range of smart
+                mobility solutions within an urban area is a crucial concern in
+                urban planning. Local public authorities and mobility service
+                providers currently base their mobility decisions on common
+                heuristics and best practices. However, these approaches
+                struggle to generalize any urban context, thus it follows that
+                their effectiveness and applicability are often compromised.
+                In particular, these approaches might end up being risky for
+                decision makers, since the resulting mobility initiatives may be
+                unaccepted by the population and this would translate in a
+                considerable waste of resources.</p>
+
+                <p>
+                Tangramob is an agent-based simulation framework that allows
+                users to assess the impacts, in terms of people adoption and
+                system performance, of the introduction of new smart mobility
+                services within an urban area of interest. Starting from the
+                urban road network of the geographical area under study, a
+                sample population and a smart mobility initiative (a list of
+                mobility services together with their definition), Tangramob
+                simulates how urban traffic is expected to evolve as citizens
+                start experiencing the newly offered traveling solutions.
+                </p>
+
+                <div class="ui large center aligned images">
+                  <img src="assets/imgs/projects/tangramob/population.png">
+                  <img src="assets/imgs/projects/tangramob/services-on-map.png">
+                  <img src="assets/imgs/projects/tangramob/services-conf.png">
+                  <img src="assets/imgs/projects/tangramob/traffic-view.png">
+                </div>
+
+                <p>
+                Tangramob relies on an Agent-Based Model (ABM) in which every
+                person in the sample population is modeled as an autonomous
+                reasoning agent. During the simulation, each agent will try to
+                understand how to better move within the city in order to satisfy
+                its daily mobility needs in the best way. To do this, agents
+                are given the ability to use all the mobility services available
+                to perform their travels, and to record their traveling experience
+                in a personal (and persistent) data structure (a Knowledge Base).
+
+                Following a Reinforcement Learning (RL) strategy, a Tangramob
+                simulation is organized as a series of iterations, so that a
+                single day is simulated multiple times: this approach
+                allows citizens to accumulate experience so as to come up with
+                better mobility decisions. At the end of a simulation, we will
+                be able to understand how the mobility initiative is accepted by
+                the population and how it affects both citizens and urban system.
+                </p>
+
+                <p>
+                This open-source computational tool can thus be thought of as a
+                Decision Support System (DSS) for Smart Mobility, since it is
+                meant to support urban planner and transport companies in
+                understanding if the simulated results of a mobility initiative
+                are expected to be in line with their objectives and plans.
+
+                The peculiarities of this tool are: the adaptability to different
+                geographical contexts; the support of multimodal trips and
+                mobility services; the ability to reproduce real-life scenarios.
+                Technically speaking, Tangramob is developed on
+                <a href="http://www.matsim.org/">MATSim</a>, an open-source
+                framework to implement large-scale agent-based transport
+                simulations.
+                </p>
+
+                <p>
+                If you want to learn more on this project, plaese visit the
+                Tangramob <a href="https://www.tangramob.com">website</a>,
+                or take a look at <a href="https://goo.gl/4yctvN">these</a>
+                slides.
+                </p>
+
               </div>
             </div>
             <div class="extra content">
@@ -114,7 +194,72 @@
                 <a>Keywords: Social Network Analysis, AB Simulations</a>
               </div>
               <div class="description">
-                Short description of the project...
+                <p>In Social Network Analysis (SNA), the field of information
+                diffusion has recently gained interest since it aims to
+                understand how people react to new incoming information within
+                an influential environment. Predicting how a piece of news can
+                spread over a social network is quite challenging since it
+                depends on many factors like its content, the users elected to
+                start its spread, the topology of the network, the interest
+                rates of the exposed users along with their social network
+                behavior as well. However, most traditional models of diffusion
+                are mainly concerned with the social network topology when
+                identifying the causes of word of mouth, thereby disregarding
+                that users behave differently during their social network
+                experience; e.g. a person who is continuously sharing posts on
+                his wall has a greater spreading effect than a reserved user.</p>
+
+                <p>jSeagull, a Java Simulation Engine for Agent-Graph
+                Understanding in Local Lattices, is a new simulation model for
+                information diffusion based on users' social network behaviors
+                for both news exposure and sharing attitude. Given a piece of
+                news (e.g. a post or a tweet) and a social network, the
+                phenomenon of <em>word of mouth</em> is modeled in terms of an
+                <em>epidemiology problem</em> as follows: susceptible agents are
+                impersonated by social network users whereas a piece of news to
+                be spread within the social network plays the role of the
+                epidemics. More precisely, a user is considered infected if
+                he/she believes on the piece of news once he/she receives it.
+
+                Being able to predict such spread is not an easy task since we
+                are dealing with humans characters, but an acceptable accuracy
+                can be reached if user personal data are avaialable.</p>
+
+                <div class="ui medium center aligned images">
+                  <img src="assets/imgs/projects/jSeagull/net1.png">
+                  <img src="assets/imgs/projects/jSeagull/net2.png">
+                  <img src="assets/imgs/projects/jSeagull/net3.png">
+                </div>
+
+                <p> On a technical viewpoint, jSeagull requires a social network
+                (a directed graph where nodes represent users and edges denote
+                their friendship or follow relationship) and a file describing
+                the personal data and the iterests of each user. Examples of
+                these files used in jSeagull can be found on the
+                <a href="http://snap.stanford.edu/">SNAP website</a>.
+                Next, the tool will guide you through the procedure of
+                <em>news/post design</em>, in order to create the specific
+                content for which we want to measure its spread within the
+                social network under study.  During this procedure, it is
+                possible to write some text, add hashtags and tag some social
+                network users, like in common social networks.
+                Once the post is created, jSeagull applies a coloring scheme to
+                the nodes of the social network graph in such a way to emphasize
+                the interest rates of the users for that piece of news. This
+                allows the observer to iterate through the post creation step
+                until he/she finds an impactful piece of news.
+
+                Finally, the observer has just to select a set of initial
+                spreaders, i.e. those social network users who are expected to
+                initiate and trigger the spread of the previosuly designed piece
+                of news. The simulation is then ready to start: during this
+                process is quite compelling to observe how the "epidemics"
+                propagates among users as they get in touch with the piece of
+                news. Unlike other existent approaches, it is worth remarking
+                that the actual news spread of the piece of news depends on
+                users' interests and sharing behaviors, as well as
+                the affinity and strenght of their friendship ties.</p>
+
               </div>
             </div>
             <div class="extra content">
@@ -130,8 +275,52 @@
                 <a>Keywords: Natural Language Processing, ICALL systems</a>
               </div>
               <div class="description">
-                Short description of the project...
-              </div>
+                <p>The availability of Natural Language Processing (NLP) tools
+                  and resources, together with the integration of some artificial
+                  intelligence techniques, allowed the advancement of traditional
+                  Computer-Assisted Language Learning (CALL) systems.
+
+                  This emergent field aims at developing learning platform
+                capable of analyzing language automatically, providing learners
+                with individualized feedback on his own mistakes. However, the
+                state of the art of ICALL systems does not include any actual
+                implementation for the specific case of the Italian language.</p>
+
+                To fill this gap, ICALL-IT is a new intelligent computer-assisted
+                language learning platform for the Italian language.
+
+                First, we collected all the publicly available natural
+                language tools for the Italian in order to consider their adoption
+                within our platform. Then, we designed five different exercises
+                according to what is considered tougher for an intermediate
+                Italian language learner.
+
+                we implemented an ICALL system providing learners with five
+                exercises, some of which have different variants. Each exercise
+                is aimed at improving a specific set of the user's skills and it
+                has one or more learning outcomes.
+
+                During this step, we identified 5 different exercises from a set
+                of learning outcomes, defined according to the most difficult
+                issues for an Italian language learner.
+
+                <div class="ui medium center aligned images">
+                  <img src="assets/imgs/projects/icallit/main.png">
+                  <img src="assets/imgs/projects/icallit/ex1.png">
+                  <img src="assets/imgs/projects/icallit/ex2.png">
+                  <img src="assets/imgs/projects/icallit/ex3.png">
+                  <img src="assets/imgs/projects/icallit/ex4.png">
+                  <img src="assets/imgs/projects/icallit/ex5.png">
+                </div>
+
+                After having evaluated all the available NLP tools for the Italian language, we decided to adopt three main resources: TUT as annotated corpus, Morph-it! as lexicon and TreeTagger \cite{Schmid/Baroni} as part-of-speech text tagger. The first one consists in a native representation format which captures the richness of the predicate-argument structure, i.e. a crucial layer of representation for several NLP tasks such as parsing information extraction, machine translation and question answering. Specifically, it contains more than 90.000 tokens in native TUT format that can be seen as an equivalent representation to the PENN format. However, in order to exploit such resource we need to perform some cleaning operations aimed to remove meaningless white spaces and useless characters. Moreover, since we are making use of tools coming from different sources it is also necessary to agree on the same character encoding. For this purpose, we chose utf-8 since it is capable of representing all possible characters, or code points, in Unicode and is now the dominant character encoding for the World Wide Web. The second adopted resource is Morph-it!, a lexicon of inflected forms with their lemma and morphological features. What makes it appealing is that it can be used as a data source for either a lemmatizer, morphological analyzer or a morphological generator. The lexicon currently contains 505,074 entries and 35,056 lemmas and it is continuously updated with new words. Even in this case, we needed to modify the original data format since each atomic information is merged with the other for the same (form, lemma) couple. As a consequence, if we were interested on accessing to a particular feature for a given (form, lemma) couple, we would not be able to perform such operation due to the original representation format. For this reason, we modified the lexicon in such a way to split each relevant feature from the merged representation and we partitioned the whole collection according to common features that different word types can have. In fact, as far as we know, a NOUN has 2 features (gender and number) while a VERB has 5 features (mood, tense, person, number and gender) in the Italian language. Therefore, we could not merge these categories into the same partition, but we can group all the (form, lemma) couples with the same number and type of features within a unique partition. In this way, as the realisation of the proposed learning exercises demands, we can access to each class separately thereby requesting one or more features for a given (form, lemma) pair. The last NLP tool used for ICALL-IT is TreTagger, a language-independent tool for annotating text with part-of-speech and lemma information. More precisely, TreTagger suggests a new probabilistic tagging method based on decision trees, avoiding problems that Markov Model taggers face when they have to estimate transition probabilities from sparse data. Such method permits to achieve 96,36\% accuracy on Penn-Treebank data but it needs to be properly configured in order to process Italian texts.
+
+                <ul>
+                  <li><b>Exercise 1</b>:</li>
+                  <li>Exercise 2:</li>
+                </ul>
+
+            </div>
             </div>
             <div class="extra content">
               <span class="right floated">Started on 2015</span>
