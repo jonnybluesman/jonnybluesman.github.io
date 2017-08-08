@@ -130,11 +130,11 @@
                 start experiencing the newly offered traveling solutions.
                 </p>
 
-                <div class="ui large center aligned images">
+                <div class="ui medium center aligned images">
                   <img src="assets/imgs/projects/tangramob/population.png">
                   <img src="assets/imgs/projects/tangramob/services-on-map.png">
                   <img src="assets/imgs/projects/tangramob/services-conf.png">
-                  <img src="assets/imgs/projects/tangramob/traffic-view.png">
+
                 </div>
 
                 <p>
@@ -270,7 +270,7 @@
           <!-- ICALLIT ......................................... -->
           <div class="blue card">
             <div class="content">
-              <div class="header">ICALLIT</div>
+              <a class="header" href="https://goo.gl/2Vzp8P">ICALL-IT</a>
               <div class="meta">
                 <a>Keywords: Natural Language Processing, ICALL systems</a>
               </div>
@@ -279,15 +279,17 @@
                   and resources, together with the integration of some artificial
                   intelligence techniques, allowed the advancement of traditional
                   Computer-Assisted Language Learning (CALL) systems.
+                  The formula AI + CALL has brough to Intelligent CALL (ICALL),
+                  an emergent field aiming at developing learning platforms
+                  capable of analyzing language automatically, providing learners
+                  with individualized feedback on their mistakes.
 
-                  This emergent field aims at developing learning platform
-                capable of analyzing language automatically, providing learners
-                with individualized feedback on his own mistakes. However, the
-                state of the art of ICALL systems does not include any actual
-                implementation for the specific case of the Italian language.</p>
+                  However, the state of the art of ICALL systems does not include
+                  any functional application for the Italian language.</p>
 
-                To fill this gap, ICALL-IT is a new intelligent computer-assisted
-                language learning platform for the Italian language.
+                <p>To fill this gap, we developed ICALL-IT, a new intelligent
+                computer-assisted language learning platform for the Italian
+                language.
 
                 First, we collected all the publicly available natural
                 language tools for the Italian in order to consider their adoption
@@ -302,7 +304,7 @@
 
                 During this step, we identified 5 different exercises from a set
                 of learning outcomes, defined according to the most difficult
-                issues for an Italian language learner.
+                issues for an Italian language learner.</p>
 
                 <div class="ui medium center aligned images">
                   <img src="assets/imgs/projects/icallit/main.png">
@@ -313,7 +315,58 @@
                   <img src="assets/imgs/projects/icallit/ex5.png">
                 </div>
 
-                After having evaluated all the available NLP tools for the Italian language, we decided to adopt three main resources: TUT as annotated corpus, Morph-it! as lexicon and TreeTagger \cite{Schmid/Baroni} as part-of-speech text tagger. The first one consists in a native representation format which captures the richness of the predicate-argument structure, i.e. a crucial layer of representation for several NLP tasks such as parsing information extraction, machine translation and question answering. Specifically, it contains more than 90.000 tokens in native TUT format that can be seen as an equivalent representation to the PENN format. However, in order to exploit such resource we need to perform some cleaning operations aimed to remove meaningless white spaces and useless characters. Moreover, since we are making use of tools coming from different sources it is also necessary to agree on the same character encoding. For this purpose, we chose utf-8 since it is capable of representing all possible characters, or code points, in Unicode and is now the dominant character encoding for the World Wide Web. The second adopted resource is Morph-it!, a lexicon of inflected forms with their lemma and morphological features. What makes it appealing is that it can be used as a data source for either a lemmatizer, morphological analyzer or a morphological generator. The lexicon currently contains 505,074 entries and 35,056 lemmas and it is continuously updated with new words. Even in this case, we needed to modify the original data format since each atomic information is merged with the other for the same (form, lemma) couple. As a consequence, if we were interested on accessing to a particular feature for a given (form, lemma) couple, we would not be able to perform such operation due to the original representation format. For this reason, we modified the lexicon in such a way to split each relevant feature from the merged representation and we partitioned the whole collection according to common features that different word types can have. In fact, as far as we know, a NOUN has 2 features (gender and number) while a VERB has 5 features (mood, tense, person, number and gender) in the Italian language. Therefore, we could not merge these categories into the same partition, but we can group all the (form, lemma) couples with the same number and type of features within a unique partition. In this way, as the realisation of the proposed learning exercises demands, we can access to each class separately thereby requesting one or more features for a given (form, lemma) pair. The last NLP tool used for ICALL-IT is TreTagger, a language-independent tool for annotating text with part-of-speech and lemma information. More precisely, TreTagger suggests a new probabilistic tagging method based on decision trees, avoiding problems that Markov Model taggers face when they have to estimate transition probabilities from sparse data. Such method permits to achieve 96,36\% accuracy on Penn-Treebank data but it needs to be properly configured in order to process Italian texts.
+                <p>After having evaluated all the available NLP tools for the
+                  Italian language, we decided to adopt three main resources:
+                  TUT as annotated corpus, Morph-it! as lexicon and TreeTagger
+                  \cite{Schmid/Baroni} as part-of-speech text tagger. The first
+                  one consists in a native representation format which captures
+                  the richness of the predicate-argument structure, i.e. a
+                  crucial layer of representation for several NLP tasks such as
+                  parsing information extraction, machine translation and
+                  question answering. Specifically, it contains more than 90.000
+                  tokens in native TUT format that can be seen as an equivalent
+                  representation to the PENN format. However, in order to exploit
+                  such resource we need to perform some cleaning operations aimed
+                  to remove meaningless white spaces and useless characters.
+                  Moreover, since we are making use of tools coming from
+                  different sources it is also necessary to agree on the same
+                  character encoding. For this purpose, we chose utf-8 since it
+                  is capable of representing all possible characters, or code
+                  points, in Unicode and is now the dominant character encoding
+                  for the World Wide Web. The second adopted resource is Morph-it!,
+                  a lexicon of inflected forms with their lemma and morphological
+                  features. What makes it appealing is that it can be used as a
+                  data source for either a lemmatizer, morphological analyzer or
+                  a morphological generator. The lexicon currently contains
+                  505,074 entries and 35,056 lemmas and it is continuously
+                  updated with new words. Even in this case, we needed to modify
+                  the original data format since each atomic information is
+                  merged with the other for the same (form, lemma) couple. As a
+                  consequence, if we were interested on accessing to a particular
+                  feature for a given (form, lemma) couple, we would not be able
+                  to perform such operation due to the original representation
+                  format. For this reason, we modified the lexicon in such a way
+                  to split each relevant feature from the merged representation
+                  and we partitioned the whole collection according to common
+                  features that different word types can have. In fact, as far as
+                  we know, a NOUN has 2 features (gender and number) while a VERB
+                  has 5 features (mood, tense, person, number and gender) in the
+                  Italian language. Therefore, we could not merge these categories
+                  into the same partition, but we can group all the (form, lemma)
+                  couples with the same number and type of features within a
+                  unique partition. In this way, as the realisation of the
+                  proposed learning exercises demands, we can access to each
+                  class separately thereby requesting one or more features for
+                  a given (form, lemma) pair. The last NLP tool used for ICALL-IT
+                  is TreTagger, a language-independent tool for annotating text
+                  with part-of-speech and lemma information. More precisely,
+                  TreTagger suggests a new probabilistic tagging method based on
+                  decision trees, avoiding problems that Markov Model taggers
+                  face when they have to estimate transition probabilities from
+                  sparse data. Such method permits to achieve 96,36\% accuracy
+                  on Penn-Treebank data but it needs to be properly configured
+                  in order to process Italian texts.
+                </p>
 
                 <ul>
                   <li><b>Exercise 1</b>:</li>
