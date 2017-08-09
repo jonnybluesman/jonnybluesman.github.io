@@ -72,21 +72,29 @@
         <hr class="hrcolored-v2">
         <div class="ui raised attached very padded container justified segment">
           <!-- <h2 class="ui header">Timeline</h2> -->
-          <p>
-            <span class="time">2017 - Now</span>
-            <span class="posi">Research Assistant</span>
-            <span class="place">at the University of Camerino: advancing and
-            improving <a href="https://www.tangramob.com">Tangramob</a>
-            (AB Simulation, Reinforcement Learning)</span>
-            <br>
-            <span class="time">2014 - 2016</span>
-            <span class="posi">MSc in Computer Science</span>
-            <span class="place">Double Degree Program: University of Camerino and Reykjavik University</span>
-            <br>
-            <span class="time">2011 - 2014</span>
-            <span class="posi">BSc in Computer Science</span>
-            <span class="place">University of Camerino</span>
-          </p>
+            <table class="ui fixed single line celled table">
+              <table class="ui very basic table">
+                <tbody>
+                  <tr>
+                    <td class="time">2017 - Now</td>
+                    <td class="posi">Research Assistant</td>
+                    <td>University of Camerino: advancing and
+                    improving <a href="https://www.tangramob.com">Tangramob</a>
+                    (AB Simulation, Reinforcement Learning)</td>
+                  </tr>
+                  <tr>
+                    <td class="time">2014 - 2016</td>
+                    <td class="posi">MSc in Computer Science</td>
+                    <td>University of Camerino and Reykjavik University
+                        (Double Degree)</td>
+                  </tr>
+                  <tr>
+                    <td class="time">2011 - 2014</td>
+                    <td class="posi">BSc in Computer Science</td>
+                    <td>University of Camerino</td>
+                  </tr>
+                </tbody>
+              </table>
         </div>
 
         <h3 class="ui top attached inverted header">
@@ -289,22 +297,15 @@
 
                 <p>To fill this gap, we developed ICALL-IT, a new intelligent
                 computer-assisted language learning platform for the Italian
-                language.
+                language. The goal of this project is to help young Italian
+                students and non-native Italian speakers improve their
+                grammatical skills as well as the understanding of the language.
 
-                First, we collected all the publicly available natural
-                language tools for the Italian in order to consider their adoption
-                within our platform. Then, we designed five different exercises
-                according to what is considered tougher for an intermediate
-                Italian language learner.
-
-                we implemented an ICALL system providing learners with five
-                exercises, some of which have different variants. Each exercise
-                is aimed at improving a specific set of the user's skills and it
-                has one or more learning outcomes.
-
-                During this step, we identified 5 different exercises from a set
-                of learning outcomes, defined according to the most difficult
-                issues for an Italian language learner.</p>
+                For this purpose, the first version of ICALL-it provides five
+                different exercises (plus variants) based on what is considered
+                to be more difficult for an intermediate Italian student.
+                Each exercise aims to improve a specific set of the user's
+                skills and it comes with one or more learning outcomes.</p>
 
                 <div class="ui medium center aligned images">
                   <img src="assets/imgs/projects/icallit/main.png">
@@ -315,63 +316,31 @@
                   <img src="assets/imgs/projects/icallit/ex5.png">
                 </div>
 
-                <p>After having evaluated all the available NLP tools for the
-                  Italian language, we decided to adopt three main resources:
-                  TUT as annotated corpus, Morph-it! as lexicon and TreeTagger
-                  \cite{Schmid/Baroni} as part-of-speech text tagger. The first
-                  one consists in a native representation format which captures
-                  the richness of the predicate-argument structure, i.e. a
-                  crucial layer of representation for several NLP tasks such as
-                  parsing information extraction, machine translation and
-                  question answering. Specifically, it contains more than 90.000
-                  tokens in native TUT format that can be seen as an equivalent
-                  representation to the PENN format. However, in order to exploit
-                  such resource we need to perform some cleaning operations aimed
-                  to remove meaningless white spaces and useless characters.
-                  Moreover, since we are making use of tools coming from
-                  different sources it is also necessary to agree on the same
-                  character encoding. For this purpose, we chose utf-8 since it
-                  is capable of representing all possible characters, or code
-                  points, in Unicode and is now the dominant character encoding
-                  for the World Wide Web. The second adopted resource is Morph-it!,
-                  a lexicon of inflected forms with their lemma and morphological
-                  features. What makes it appealing is that it can be used as a
-                  data source for either a lemmatizer, morphological analyzer or
-                  a morphological generator. The lexicon currently contains
-                  505,074 entries and 35,056 lemmas and it is continuously
-                  updated with new words. Even in this case, we needed to modify
-                  the original data format since each atomic information is
-                  merged with the other for the same (form, lemma) couple. As a
-                  consequence, if we were interested on accessing to a particular
-                  feature for a given (form, lemma) couple, we would not be able
-                  to perform such operation due to the original representation
-                  format. For this reason, we modified the lexicon in such a way
-                  to split each relevant feature from the merged representation
-                  and we partitioned the whole collection according to common
-                  features that different word types can have. In fact, as far as
-                  we know, a NOUN has 2 features (gender and number) while a VERB
-                  has 5 features (mood, tense, person, number and gender) in the
-                  Italian language. Therefore, we could not merge these categories
-                  into the same partition, but we can group all the (form, lemma)
-                  couples with the same number and type of features within a
-                  unique partition. In this way, as the realisation of the
-                  proposed learning exercises demands, we can access to each
-                  class separately thereby requesting one or more features for
-                  a given (form, lemma) pair. The last NLP tool used for ICALL-IT
-                  is TreTagger, a language-independent tool for annotating text
-                  with part-of-speech and lemma information. More precisely,
-                  TreTagger suggests a new probabilistic tagging method based on
-                  decision trees, avoiding problems that Markov Model taggers
-                  face when they have to estimate transition probabilities from
-                  sparse data. Such method permits to achieve 96,36\% accuracy
-                  on Penn-Treebank data but it needs to be properly configured
-                  in order to process Italian texts.
-                </p>
+                <p>At the moment, ICALL-IT makes use of the following three NLP
+                  resources and tools for enabling the 5 exercises:
+                  <a href="http://www.di.unito.it/~tutreeb/">TUT</a> as annotated
+                  corpus, <a href="http://sslmitdev-online.sslmit.unibo.it/linguistics/morph-it.php">Morph-it!</a>
+                  as lexicon and <a href="http://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger/">TreeTagger</a>
+                  as part-of-speech text tagger.
 
-                <ul>
-                  <li><b>Exercise 1</b>:</li>
-                  <li>Exercise 2:</li>
-                </ul>
+                  The first one consists in a native representation format which
+                  captures the richness of the predicate-argument structure, i.e.
+                  a crucial layer of representation for several NLP tasks such as
+                  parsing information extraction, machine translation and
+                  question answering.
+
+                  The second resource is Morph-it!, a lexicon of inflected forms
+                  with their lemma and morphological features. It can be used as
+                  a data source for either a lemmatizer, a morphological analyzer
+                  or a morphological generator.
+
+                  The last NLP tool used in ICALL-IT is TreeTagger, a
+                  language-independent tool for annotating text with part-of-speech
+                  and lemma information. TreTagger suggests a new probabilistic
+                  tagging method based on decision trees, avoiding problems that
+                  Markov Model taggers face when they have to estimate transition
+                  probabilities from sparse data.
+                </p>
 
             </div>
             </div>
