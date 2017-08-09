@@ -124,3 +124,7 @@ body {
   margin-top: 2.5vmin;
   margin-bottom: 2vmin;
 }
+
+.ui.fixed.single.line.celled.table {
+  margin-top: 1vmin;
+}
