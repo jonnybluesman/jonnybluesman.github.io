@@ -42,6 +42,11 @@ body {
     float: left;
 }
 
+.uline {
+    color: red;
+    text-decoration: underline dotted red;
+}
+
 #headertext {
     font-family: 'Raleway', sans-serif;
     font-size: 26px;
@@ -76,7 +81,8 @@ body {
 }
 
 .time {
-  color: rgb(205, 170, 90);
+  color: #000;
+  font-weight: bold;
 }
 
 .posi {
