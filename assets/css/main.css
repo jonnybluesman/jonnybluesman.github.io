@@ -3,8 +3,16 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
+.focus {
+  font-size: medium;
+}
+
+.bold {
+  font-weight: bold;
+}
+
 .bgimage {
-    background-image: url('../imgs/sibilla.jpg');
+    background-image: url('../imgs/piazza.png');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
