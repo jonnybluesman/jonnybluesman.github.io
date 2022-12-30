@@ -7,8 +7,13 @@ body {
   font-size: medium;
 }
 
+.thick {
+  font-weight: 900;
+  color: black;
+}
+
 .bold {
-  font-weight: bold;
+  font-weight: 900;
 }
 
 .bgimage {
@@ -64,14 +69,14 @@ body {
 }
 
 #headername {
-  font-size: 46px;
+  font-size: xxx-large;
   font-weight: 400;
   margin-bottom: 5px;
   text-shadow: 2px 2px 8px black, 0px 0px 10px black;
 }
 
 #headerrole {
-  font-size: 22px;
+  font-size: x-large;
   font-weight: 300;
   margin-top: -6px;
   margin-bottom: 0px;
@@ -125,6 +130,16 @@ body {
   background-image: linear-gradient(to right, #c4e17f, #c4e17f 12.5%, #f7fdca 12.5%,
     #f7fdca 25%, #fecf71 25%, #fecf71 37.5%, #f0776c 37.5%, #f0776c 50%, #db9dbe 50%,
     #db9dbe 62.5%, #c49cde 62.5%, #c49cde 75%, #669ae1 75%, #669ae1 87.5%, #62c2e4 87.5%, #62c2e4);
+  background-origin: content-box;
+  padding-right: 50%;
+  background-size: 200%;
+}
+
+.hrdark {
+  border: 0;
+  height: 2px;
+  margin: 0px -1px 10px -1px;
+  background: #000000;
   background-origin: content-box;
   padding-right: 50%;
   background-size: 200%;
