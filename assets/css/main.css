@@ -1,6 +1,8 @@
 body {
   background: #ecede8;
   font-family: 'Raleway', sans-serif;
+  background-image: url('../imgs/chor.jpg');
+  background-repeat: repeat;
 }
 
 .focus {
@@ -143,17 +145,4 @@ body {
   background-origin: content-box;
   padding-right: 50%;
   background-size: 200%;
-}
-
-.ui.cards > .card {
-  margin-bottom: 0px;
-}
-
-.ui.center.aligned.images {
-  margin-top: 2.5vmin;
-  margin-bottom: 2vmin;
-}
-
-.ui.fixed.single.line.celled.table {
-  margin-top: 1vmin;
 }
