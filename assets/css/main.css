@@ -5,13 +5,13 @@ body {
   background-repeat: repeat;
 }
 
-.focus {
-  font-size: medium;
-}
-
 .thick {
   font-weight: 900;
   color: black;
+}
+
+html {
+  font-size: 2em;
 }
 
 .bold {
