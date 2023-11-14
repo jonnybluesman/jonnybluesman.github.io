@@ -10,6 +10,10 @@ body {
   color: black;
 }
 
+html {
+  font-size: 2em;
+}
+
 .bold {
   font-weight: 900;
 }
