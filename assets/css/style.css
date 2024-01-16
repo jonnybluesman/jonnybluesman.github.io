@@ -1,0 +1,50 @@
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #f8f9fa;
+}
+header {
+  background-color: #343a40;
+  color: #ffffff;
+  padding: 20px 0;
+}
+header h1 {
+  font-size: 2em;
+}
+header p {
+  font-size: 1em;
+}
+nav {
+  background-color: #343a40;
+  padding: 10px 0;
+}
+nav a {
+  color: #ffffff !important;
+}
+section {
+  padding: 50px 0;
+}
+section h2 {
+  color: #343a40;
+}
+footer {
+  background-color: #343a40;
+  color: #ffffff;
+  padding: 20px 0;
+  text-align: center;
+}
+a:link { 
+  text-decoration: none; 
+}
+.uline {
+    color: red;
+    text-decoration: underline dotted red;
+}
+.thick {
+  font-weight: 900;
+  color: black;
+}
+.posi {
+  /*color: rgb(151, 183, 114);
+  font-size: 12pt;*/
+  font-weight: 400;
+}
