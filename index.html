@@ -18,7 +18,9 @@
   <!-- Navigation Menu -->
   <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container">
-      <!-- <a class="navbar-brand" href="#">Jacopo de Berardinis, PhD</a> -->
+      <a class="navbar-brand" href="#">
+        <img src="assets/imgs/logo.svg" alt="AMLab Logo" height="80">
+      </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -49,34 +51,73 @@
           <h1>Jacopo de Berardinis, PhD</h1>
           <p>Music Information Retrieval, Responsible Music AI</p>
         </div>
-        <div class="col-sm-1">
-          <img src="assets/imgs/jaco_cropped.jpg"
+        <!-- <div class="col-sm-1">
+          <img src="assets/imgs/logo.svg"
                class="rounded float-left img-fluid">
-        </div>
+        </div> -->
       </div>
     </div>
   </header>
 
-  <!-- About Section -->
-  <section class="container">
+  <section class="container mt-4">
     <div class="row">
-      <div class="col-lg-8 mx-auto text-center">
+      <div class="col-lg-8 mx-auto">
+        <!-- <h2>Contact Information</h2> -->
         <p class="lead font-weight-normal">
           I am an Assistant Professor (Lecturer) in Computer Science at the
           University of Liverpool.
         </p>
         <p>
-          My research lies at the intersection of Machine Learning and Music Technology.
+          My research lies at the intersection of AI and Music Technology.
           I design methods for computational music analysis and information retrieval:
           from the detection of structures, emotions, and similarities in music, to
           the design of systems for personalised music discovery and recommendation.
-          <br>
-          Using a computational lens, I seek to investigate the link between
-          music, memory, and emotions, to <span class="thick">derive</span> 
-          knowledge that can be <span class="thick">used</span> to improve our
-          understanding of music, personalise music listening for wellbeing,
-          support computational creativity and increase engagement in music education.
         </p>
+        <div class="row align-items-center mt-3">
+          <div class="col-md-8">
+            <div class="table-responsive coordinates">
+              <table class="table table-sm table-borderless">
+                <tbody>
+                  <tr>
+                    <th scope="row" class="align-middle">
+                      <i class="bi bi-envelope"></i> Email
+                    </th>
+                    <td class="align-middle">
+                      <a href="mailto:jacodb@liverpool.ac.uk">jacodb@liverpool.ac.uk</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="align-middle">
+                      <i class="bi bi-building"></i> Address
+                    </th>
+                    <td class="align-middle">
+                      <address>
+                        Department of Computer Science<br>
+                        University of Liverpool<br>
+                        Liverpool, L69 3BX, UK
+                      </address>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="align-middle">
+                      <i class="bi bi-door-open"></i> Office
+                    </th>
+                    <td class="align-middle">Ashton G12/A</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="align-middle">
+                      <i class="bi bi-clock"></i> Office Hours
+                    </th>
+                    <td class="align-middle">Friday 1-2pm</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="col-md-4 text-center">
+            <img src="assets/imgs/jaco_cropped.jpg" class="rounded img-fluid" alt="Your Picture">
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -87,6 +128,12 @@
       <div class="col-lg-8 mx-auto text-center">
         <h2>Research</h2>
         <p>
+          Using a computational lens, I seek to investigate the link between
+          music, memory, and emotions, to <span class="thick">derive</span> 
+          knowledge that can be <span class="thick">used</span> to improve our
+          understanding of music, personalise music listening for wellbeing,
+          support computational creativity and increase engagement in music education.
+          <br><br>
           My research spans across 3 areas: (1) <span class="font-weight-bold">Computational Creativity</span>, (2) Music Personalisation, and (3) Semantic Music Web. All these directions share Music Information Retrieval as the core foundational level, providing computational methods to extract, search and relate knowledge from music. More information is given below.
         </p>
       </div>
@@ -247,9 +294,9 @@
           Before my appointment, I worked on the S+T+ARTS <a href="https://musae.starts.eu">MUSAE</a> project
           and on the EU H2020 <a href="https://polifonia-project.eu">Polifonia</a>
           project, where I lead the <a href="https://polifonia-project.eu/pilots/interlink/">INTERLINK</a> pilot.
-          Previously, I received a PhD in Machine Learning from the University of Manchester.
-          My dissertation, "<a href="https://research.manchester.ac.uk/en/studentTheses/structural-complexity-in-music-modelling-and-generation-with-deep">Structural complexity in music modelling and
-          generation with deep neural networks</a>" focused on the <em>automatic evaluation</em> of
+          I received a PhD in Machine Learning from the University of Manchester.
+          My dissertation, <em>"<a href="https://research.manchester.ac.uk/en/studentTheses/structural-complexity-in-music-modelling-and-generation-with-deep">Structural complexity in music modelling and
+          generation with deep neural networks</a>"</em> focused on the automatic evaluation of
           generative models in regard to their ability to compose music with realistic structure.
         </p>
         <table class="table">
@@ -300,7 +347,7 @@
         <h2>Contact</h2>
         <div class="container" id="social-icons">
           <ul class="list-inline">
-            <a href="mailto:jacopo.deberardinis@kcl.ac.uk">
+            <a href="mailto:jacodb@liverpool.ac.uk">
               <li class="list-inline-item bi-envelope h3"></li></a>
             <a href="https://scholar.google.co.uk/citations?user=eYJ1k7wAAAAJ&hl=it&oi=ao">
               <li class="list-inline-item bi-google h3"></li></a>
@@ -311,11 +358,10 @@
           </ul>
         </div>
         <p>
-          I am actively seeking motivated students with a critical mindset and
-          unwavering perseverance to work on Music AI projects and internships.
+          I am actively seeking motivated students to work on Music AI projects.
           If you are passionate about exploring any of the research topics listed
           <a href="#research">above</a> or have a unique project proposal in mind,
-          I encourage you to reach out.
+          I encourage you to reach out!
           <br>
           Connect with me via email at <a href="mailto:jacodb@liverpool.ac.uk">jacodb@liverpool.ac.uk</a>.
         </p>
