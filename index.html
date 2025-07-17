@@ -3,212 +3,150 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Jacopo de Berardinis about page.">
-  <meta name="keywords" content="Jacopo de Berardinis, KCL, Manchester, Liverpool">
+  <meta name="description" content="Jacopo de Berardinis - Assistant Professor in Computer Science at the University of Liverpool, specialising in Music Informatics and Knowledge Engineering.">
+  <meta name="keywords" content="Jacopo de Berardinis, Music Information Retrieval, Responsible Music AI, Multimodal Knowledge Graphs, Liverpool, Computer Science">
   <meta name="author" content="Jacopo de Berardinis">
-  <title>Jacopo | About</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  </head>
+  <title>Jacopo de Berardinis | Music Informatics & AI</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Bootstrap Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-  <!-- CSS main file -->
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <!-- Custom CSS: hidden for now! -->
+  <!-- <link rel="stylesheet" type="text/css" href="assets/css/style.css"> -->
 </head>
 <body>
   <!-- Navigation Menu -->
-  <nav class="navbar navbar-expand-lg navbar-dark">
-    <div class="container">
-      <a class="navbar-brand" href="#">
-        <img src="assets/imgs/logo.svg" alt="AMLab Logo" height="80">
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#research">Research</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#publications">Publications</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-        </ul>
+  <nav class="bg-gradient-to-r from-white to-gray-100 shadow-sm sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex justify-between items-center h-20">
+        <a href="#" class="flex items-center">
+          <img src="assets/imgs/logo.png" alt="AMLab Logo" class="h-16">
+        </a>
+        <div class="hidden md:flex space-x-8">
+          <a href="#research" class="text-gray-700 hover:text-gray-900 transition-colors">Research</a>
+          <a href="#publications" class="text-gray-700 hover:text-gray-900 transition-colors">Publications</a>
+          <a href="#about" class="text-gray-700 hover:text-gray-900 transition-colors">About</a>
+          <a href="#contact" class="text-gray-700 hover:text-gray-900 transition-colors">Contact</a>
+        </div>
       </div>
     </div>
   </nav>
 
   <!-- Header Section -->
-  <header>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-11">
-          <h1>Jacopo de Berardinis, PhD</h1>
-          <p>Music Information Retrieval, Responsible Music AI</p>
-        </div>
-        <!-- <div class="col-sm-1">
-          <img src="assets/imgs/logo.svg"
-               class="rounded float-left img-fluid">
-        </div> -->
-      </div>
+  <header class="bg-white border-b border-gray-200 py-16">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h1 class="text-4xl md:text-5xl font-light text-gray-900 mb-4">Jacopo de Berardinis, PhD</h1>
+      <p class="text-xl text-gray-600 font-light">Music Informatics • Knowledege Engineering</p>
     </div>
   </header>
 
-  <section class="container mt-4">
-    <div class="row">
-      <div class="col-lg-8 mx-auto">
-        <!-- <h2>Contact Information</h2> -->
-        <p class="lead font-weight-normal">
-          I am an Assistant Professor (Lecturer) in Computer Science at the
-          University of Liverpool.
-        </p>
-        <p>
-          My research lies at the intersection of AI and Music Technology.
-          I design methods for computational music analysis and information retrieval:
-          from the detection of structures, emotions, and similarities in music, to
-          the design of systems for personalised music discovery and recommendation.
-        </p>
-        <div class="row align-items-center mt-3">
-          <div class="col-md-8">
-            <div class="table-responsive coordinates">
-              <table class="table table-sm table-borderless">
-                <tbody>
-                  <tr>
-                    <th scope="row" class="align-middle">
-                      <i class="bi bi-envelope"></i> Email
-                    </th>
-                    <td class="align-middle">
-                      <a href="mailto:jacodb@liverpool.ac.uk">jacodb@liverpool.ac.uk</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row" class="align-middle">
-                      <i class="bi bi-building"></i> Address
-                    </th>
-                    <td class="align-middle">
-                      <address>
-                        Department of Computer Science<br>
-                        University of Liverpool<br>
-                        Liverpool, L69 3BX, UK
-                      </address>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row" class="align-middle">
-                      <i class="bi bi-door-open"></i> Office
-                    </th>
-                    <td class="align-middle">Ashton G12/A</td>
-                  </tr>
-                  <tr>
-                    <th scope="row" class="align-middle">
-                      <i class="bi bi-clock"></i> Office Hours
-                    </th>
-                    <td class="align-middle">Friday 1-2pm</td>
-                  </tr>
-                </tbody>
-              </table>
+  <!-- Main Content -->
+  <main class="max-w-4xl mx-auto px-4 py-12">
+    <div class="text-center mb-12">
+      <p class="text-lg text-gray-700 mb-6">
+        I am an Assistant Professor (Lecturer) in Computer Science at the University of Liverpool.
+      </p>
+      <p class="text-gray-600 mb-8">
+        My research lies at the intersection of AI and Music Technology.
+        I design methods for computational music analysis and information retrieval, while engineering large-scale knowledge systems promoting access and interoperability of multimodal resources.
+        My work aims to develop trustworthy AI that supports human creativity, improve our understanding and appreciation of music, and preserve musical heritage.
+      </p>
+
+      <!-- Contact Info and Photo -->
+      <div class="grid md:grid-cols-3 gap-8 items-center">
+        <div class="md:col-span-2">
+          <div class="bg-white rounded-lg shadow-sm p-6 border border-gray-200">
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                  <i class="bi bi-envelope text-gray-700"></i>
+                  <span class="font-medium">Email</span>
+                </div>
+                <a href="mailto:jacodb@liverpool.ac.uk" class="text-gray-900 hover:text-gray-700">jacodb@liverpool.ac.uk</a>
+              </div>
+              <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                  <i class="bi bi-building text-gray-700"></i>
+                  <span class="font-medium">Address</span>
+                </div>
+                <div class="text-right text-gray-600">
+                  <div>Department of Computer Science</div>
+                  <div>University of Liverpool</div>
+                  <div>Liverpool, L69 3BX, UK</div>
+                </div>
+              </div>
+              <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                  <i class="bi bi-door-open text-gray-700"></i>
+                  <span class="font-medium">Office</span>
+                </div>
+                <span class="text-gray-600">Ashton G12/A</span>
+              </div>
+              <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                  <i class="bi bi-clock text-gray-700"></i>
+                  <span class="font-medium">Office Hours</span>
+                </div>
+                <span class="text-gray-600">Friday 1-2pm</span>
+              </div>
             </div>
           </div>
-          <div class="col-md-4 text-center">
-            <img src="assets/imgs/jaco_cropped.jpg" class="rounded img-fluid" alt="Your Picture">
-          </div>
+        </div>
+        <div class="md:col-span-1">
+          <img src="assets/imgs/jaco_cropped.jpg" class="rounded-lg shadow-lg w-full max-w-xs mx-auto" alt="Jacopo de Berardinis">
         </div>
       </div>
     </div>
-  </section>
+  </main>
 
   <!-- Research Section -->
-  <section class="container bg-light" id="research">
-    <div class="row">
-      <div class="col-lg-8 mx-auto">
-        <h2>Research</h2>
-        <p>
-          Using a computational lens, I seek to investigate the link between
-          music, memory, and emotions, to <span class="thick">derive</span> 
-          knowledge that can be <span class="thick">used</span> to improve our
-          understanding of music, personalise music listening for wellbeing,
-          support computational creativity and increase engagement in music education.
-          <br><br>
-          My research spans across 3 areas: (1) <span class="font-weight-bold">Computational Creativity</span>, (2) Music Personalisation, and (3) Semantic Music Web. All these directions share Music Information Retrieval as the core foundational level, providing computational methods to extract, search and relate knowledge from music. More information is given below.
+  <section class="bg-gray-50 py-16" id="research">
+    <div class="max-w-4xl mx-auto px-4">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-light text-gray-900 mb-8">Research</h2>
+        <p class="text-lg text-gray-700 mb-6 max-w-3xl mx-auto">
+          My research is in <strong>Music Informatics and Knowledge Engineering</strong>, with a focus on 
+          <strong>Music Information Retrieval</strong>, <strong>Responsible Music AI</strong>, and 
+          <strong>Multimodal Knowledge Graphs</strong>.
+        </p>
+        <p class="text-gray-600 mb-8 max-w-3xl mx-auto">
+          I design computational methods to analyse, understand, and create music, with particular 
+          attention to creating trustworthy AI systems that preserve human agency in creative processes.
         </p>
       </div>
-    </div>
-
-    <div class="col-lg-8 mx-auto text-center">
-    <!-- <h4>Research Interests</h4> -->
-
-      <div class="accordion accordion-flush" id="accordionFlushExample">
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingOne">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-              Music Information Retrieval
-            </button>
-          </h2>
-          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">In Music Information Retrieval (MIR) we develop algorithms for the automatic analysis of music. This can either operate at the musical content level (audio recordings, scores, etc.) and/or at the metadata level (tags, contextual descriptions, relationships, etc.), to automatically <em>organise</em>, <em>search</em>, and <em>manipulate</em> musical information. Examples include: music transcription, genre recognition, source separation, key detection, query by humming, etc.
-            <br>
-            Despite the general interest in MIR, my research focuses more on <strong>music structure analysis</strong> (detecting sections, phrases, motifs in a piece), <strong>music emotion recognition</strong> (predicting induced or expressed emotions from music) and <strong>music similarity</strong>. This encompasses the design of both computational models to address these tasks and any application built on top of them.
-            </div>
+      
+      <!-- Research Areas -->
+      <div class="space-y-2 max-w-3xl mx-auto">
+        <div class="bg-white border border-gray-200 rounded-lg">
+          <button class="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-50" onclick="toggleAccordion('mir')">
+            <span class="font-medium text-gray-900">Music Information Retrieval</span>
+            <i class="bi bi-chevron-down text-gray-500" id="mir-icon"></i>
+          </button>
+          <div id="mir-content" class="hidden px-6 pb-4 text-gray-600">
+            <p>In Music Information Retrieval (MIR) we develop algorithms for the automatic analysis of music. This can either operate at the musical content level (audio recordings, scores, etc.) and/or at the metadata level (tags, contextual descriptions, relationships, etc.), to automatically organise, search, and manipulate musical information. Examples include: music transcription, genre recognition, source separation, key detection, query by humming, etc.
+            Despite the general interest in MIR, my research focuses more on music structure analysis (detecting sections, phrases, motifs in a piece), music emotion recognition (predicting induced or expressed emotions from music) and music similarity. This encompasses the design of both computational models to address these tasks and any application built on top of them.</p>
           </div>
         </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingTwo">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-              Responsible Generative AI
-            </button>
-          </h2>
-          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">The recent rise of generative systems (e.g. DALL-E, MusicGen, etc.) has sparked commercial interest and opened up new opportunities for the creative sector. However, Generative AI is also creating serious implications and concerns for creative professionals: from the ethical dimensions and the ownership of the generated material, to the reuse of copyrighted material as training data for music models.
-            <br>
-            To address this challenge, my research focuses on <span class="thick">responsible generative methods</span> for computational creativity that are designed <em>with</em> the artists and <em>for</em> the artists, to preserve their active role in the creation process and give them proper recognition to the music that was contributed. I am also particularly interested in new <span class="thick">evaluation methods</span> and frameworks for music generation systems and their deployment in interactive workflows.
-            </div>
+        
+        <div class="bg-white border border-gray-200 rounded-lg">
+          <button class="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-50" onclick="toggleAccordion('ai')">
+            <span class="font-medium text-gray-900">Responsible Music AI</span>
+            <i class="bi bi-chevron-down text-gray-500" id="ai-icon"></i>
+          </button>
+          <div id="ai-content" class="hidden px-6 pb-4 text-gray-600">
+            The recent rise of generative systems (e.g. DALL-E, MusicGen, etc.) has sparked commercial interest and opened up new opportunities for the creative sector. However, Generative AI is also creating serious implications and concerns for creative professionals: from the ethical dimensions and the ownership of the generated material, to the reuse of copyrighted material as training data for music models.
+            To address this challenge, my research focuses on responsible generative methods for computational creativity that are designed with the artists and for the artists, to preserve their active role in the creation process and give them proper recognition to the music that was contributed. I am also particularly interested in new evaluation methods and frameworks for music generation systems and their deployment in interactive workflows.
           </div>
         </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingThree">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-              Music Personalisation
-            </button>
-          </h2>
-          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">
-              Music is known as a universal language that unites people, allowing us to manifest our feelings, recall memories and past experiences, and providing a highly expressive medium to unleash creativity.
-              Among its benefits, music has been demonstrated to (1) improve mental and physical health (e.g. reducing stress, anxiety, depression, muscle pain, blood pressure), (2) increase memory capabilities, sleep quality, cognitive performance, and endurance, (3) while serving as an effective intervention to various disorders (<a href="https://www.youtube.com/watch?v=wlAXKJfesBM/">Alzheimer's disease</a>, dementia, etc.).
-              <br>
-              Current computational systems for music lack personalisation and interpretability - providing black-box solutions where humans are often seen as end users rather than active players.
-              Here, I seek to creating <strong>personalised</strong> and <strong>engaging experiences</strong> where users are able to naturally search for music, navigate its related content and generate playlists depending on their <em>interests</em>, <em>likings</em>, <em>mood</em>, <em>activities</em> and <em>goals</em>, while <strong>interacting</strong> with the system to expand their awareness and knowledge behind this process.
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingFour">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-              Multimodal Knowledge Graphs
-            </button>
-          </h2>
-          <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">Not only can knowledge be inferred from musical content, but informative and complementary types of knowledge are already available on the Web across different modalities (text, images, videos, links) and resources (MusicBrainz, Genius, YouTube, Songfacts, etc.). To date, this knowledge is scattered, poorly interconnected, and represented via different conventions and formats. <a href="https://www.turing.ac.uk/research/interest-groups/knowledge-graphs">Knowledge Graphs</a> hold the potential to address this problem.
-            <br>
-            We are creating the largest interconnected <strong>Music Knowledge Graph</strong> by integrating music data from different sources and modalities. This provides the opportunity to study multimodality at scale and design Trustworthy AI applications for information retrieval, knowledge discovery, and generative machine learning.
-            </div>
-          </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingFive">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
-              Representation Learning
-            </button>
-          </h2>
-          <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">In Machine Learning, the field of Representation Learning deals with designing computational models, paradigms, and training objectives to learn numerical representation (alias <em>embeddings</em>) that can be reused for a number of downstream tasks and applications. For example, in NLP, pre-trained text embeddings are used as starting point for semantic search, paraphrase detection, sentiment analysis, syntactic parsing, etc.
-            <br>
-            In the music domain, the goal is to learn general representations from musical content (audio, symbolic) and/or contextual information (e.g. metadata) to support Music Information Retrieval tasks (search, analysis, and recommendation). Here, I am interested in self-supervised methods to learn <strong>music embeddings</strong> from audio, symbolic, or multimodal data (e.g. text, images, videos, and Knowledge Graphs); with a focus on representations to address complex tasks requiring large amounts of expert annotations.
-            </div>
+        
+        <div class="bg-white border border-gray-200 rounded-lg">
+          <button class="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-50" onclick="toggleAccordion('kg')">
+            <span class="font-medium text-gray-900">Multimodal Knowledge Graphs</span>
+            <i class="bi bi-chevron-down text-gray-500" id="kg-icon"></i>
+          </button>
+          <div id="kg-content" class="hidden px-6 pb-4 text-gray-600">
+            <p>Not only can knowledge be inferred from musical content, but informative and complementary types of knowledge are already available on the Web across different modalities (text, images, videos, links) and resources (MusicBrainz, Genius, YouTube, Songfacts, etc.). To date, this knowledge is scattered, poorly interconnected, and represented via different conventions and formats. Knowledge Graphs have long been used to address this challenge.
+            We are creating interconnected Music Knowledge Graph by integrating music data from different sources and modalities. This provides the opportunity to study multimodality at scale and design Trustworthy AI applications for information retrieval, knowledge discovery, and generative AI.</p>
           </div>
         </div>
       </div>
@@ -216,192 +154,260 @@
   </section>
 
   <!-- News/Announcement Section -->
-  <section class="container bg-light mt-4">
-    <div class="row">
-      <div class="col-lg-8 mx-auto">
-        <h2>News & Announcements</h2>
-        <table class="table table-striped table-hover">
-          <tbody>
-            <tr>
-            <td class="right aligned time">Oct 2024</td>
-            <td><i class="bi bi-megaphone-fill"></i> <strong>Job Opportunity</strong> • Join our team as a Postdoctoral Research Associate in Computer Science to work on Music Knowledge Graphs in the city of Liverpool. Find out more <a href="https://my.corehr.com/pls/ulivrecruit/erq_jobspec_version_4.display_form?p_company=1&p_internal_external=E&p_display_in_irish=N&p_process_type=&p_applicant_no=&p_form_profile_detail=&p_display_apply_ind=Y&p_refresh_search=Y&p_recruitment_id=082906">here</a>.</td>
-          </tr>
-            <tr>
-            <td class="right aligned time">July 2024</td>
-            <td><i class="bi bi-person-fill"></i> <strong>New Role</strong> • I joined the University of Liverpool as an Assistant Professor (Lecturer) in Computer Science, joining forces with <a href="https://amlab.liverpool.ac.uk">AMLab</a> in the Music Department.</td>
-            </tr>
-          <tr>
-            <td class="right aligned time">June 2024</td>
-            <td><i class="bi bi-file-earmark-text"></i> <strong>Video Release</strong> • Keynote speaker recordings from the 1st International Workshop on Generative Neuro-Symbolic AI @ <a href="https://2024.eswc-conferences.org">ESWC 2024</a> are now available on our <a href="https://sites.google.com/view/genesy2024/">website</a>.</td>
-          </tr>            
-        </tbody>
-      </table>
+  <section class="max-w-4xl mx-auto px-4 py-16">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-light text-gray-900 mb-8">News & Announcements</h2>
+      <div class="space-y-4">
+        <div class="bg-white rounded-lg shadow-sm p-6 flex items-start space-x-4">
+          <div class="text-sm text-gray-500 font-medium min-w-20">Oct 2024</div>
+          <div class="flex-1">
+            <div class="flex items-center mb-2">
+              <i class="bi bi-megaphone-fill text-gray-700 mr-2"></i>
+              <span class="font-semibold">Job Opportunity</span>
+            </div>
+            <p class="text-gray-700">
+              Join our team as a Postdoctoral Research Associate in Computer Science to work on Music Knowledge Graphs in the city of Liverpool. 
+              <a href="https://my.corehr.com/pls/ulivrecruit/erq_jobspec_version_4.display_form?p_company=1&p_internal_external=E&p_display_in_irish=N&p_process_type=&p_applicant_no=&p_form_profile_detail=&p_display_apply_ind=Y&p_refresh_search=Y&p_recruitment_id=082906" class="text-gray-900 hover:underline">Find out more</a>.
+            </p>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-sm p-6 flex items-start space-x-4">
+          <div class="text-sm text-gray-500 font-medium min-w-20">July 2024</div>
+          <div class="flex-1">
+            <div class="flex items-center mb-2">
+              <i class="bi bi-person-fill text-gray-700 mr-2"></i>
+              <span class="font-semibold">New Role</span>
+            </div>
+            <p class="text-gray-700">
+              I joined the University of Liverpool as an Assistant Professor (Lecturer) in the School of Informatics and Computer Science (AI Research Unit).
+            </p>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-sm p-6 flex items-start space-x-4">
+          <div class="text-sm text-gray-500 font-medium min-w-20">June 2024</div>
+          <div class="flex-1">
+            <div class="flex items-center mb-2">
+              <i class="bi bi-file-earmark-text text-gray-700 mr-2"></i>
+              <span class="font-semibold">Video Release</span>
+            </div>
+            <p class="text-gray-700">
+              Keynote speaker recordings from the 1st International Workshop on Generative Neuro-Symbolic AI @ 
+              <a href="https://2024.eswc-conferences.org" class="text-gray-900 hover:underline">ESWC 2024</a> are now available on our 
+              <a href="https://sites.google.com/view/genesy2024/" class="text-gray-900 hover:underline">website</a>.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
+  </section>
 
-  <!-- Publication Section -->
-  <section class="container bg-light" id="publications">
-    <div class="row">
-      <div class="col-lg-10 mx-auto text-center">
-        <h2>Selected Publications</h2>
-        <p>
-          For a more comprehensive list of publications, check out my <a href="https://scholar.google.co.uk/citations?hl=en&pli=1&user=eYJ1k7wAAAAJ">Scholar</a> page.
+  <!-- Publications Section -->
+  <section class="bg-gray-50 py-16" id="publications">
+    <div class="max-w-4xl mx-auto px-4">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-light text-gray-900 mb-8">Selected Publications</h2>
+        <p class="text-gray-600">
+          For a more comprehensive list of publications, check out my <a href="https://scholar.google.co.uk/citations?hl=en&pli=1&user=eYJ1k7wAAAAJ" class="text-gray-900 hover:underline">Google Scholar</a> page.
         </p>
-        <div class="list-group">
-          <a href="https://www.nature.com/articles/s41597-023-02410-w"
-             class="list-group-item list-group-item-action flex-column align-items-start">
-            <div class="d-flex w-100 justify-content-between">
-              <h6 class="mb-1">ChoCo: a Chord Corpus and a Data Transformation Workflow for Musical Harmony Knowledge Graphs</h6>
-              <small>2023</small>
-            </div>
-            <p class="mb-1 text-left">J. de Berardinis, A. Meroño-Peñuela, A. Poltronieri, V. Presutti, in Scientific Data, vol. 10, 641, 2023.</p>
-            <small>Article | Code | Data | Slides</small>
-          </a>
-          <a href="https://dl.acm.org/doi/abs/10.1145/3543507.3587428"
-             class="list-group-item list-group-item-action flex-column align-items-start">
-            <div class="d-flex w-100 justify-content-between">
-              <h6 class="mb-1">The Harmonic Memory: a Knowledge Graph of harmonic patterns as a trustworthy framework for computational creativity</h6>
-              <small class="text-muted">2023</small>
-            </div>
-            <p class="mb-1">J. de Berardinis, A. Meroño-Peñuela, A. Poltronieri, V. Presutti, in Proceedings of the ACM Web Conference 2023, pp. 3873-3882.</p>
-            <small class="text-muted">Article | Code | Slides</small>
-          </a>
-          <a href="https://ieeexplore.ieee.org/document/9787343"
-             class="list-group-item list-group-item-action flex-column align-items-start">
-            <div class="d-flex w-100 justify-content-between">
-              <h6 class="mb-1">Measuring the Structural Complexity of Music: From Structural Segmentations to the Automatic Evaluation of Models for Music Generation</h6>
-              <small class="text-muted">2022</small>
-            </div>
-            <p class="mb-1">J. de Berardinis, E. Coutinho, A. Cangelosi, in IEEE/ACM Transactions on Audio, Speech, and Language Processing (TASLP), vol. 30, 2022.</p>
-            <small class="text-muted">Article | Code | Slides</small>
-          </a>
-          <a href="https://transactions.ismir.net/articles/10.5334/tismir.41/"
-             class="list-group-item list-group-item-action flex-column align-items-start">
-            <div class="d-flex w-100 justify-content-between">
-              <h6 class="mb-1">Unveiling the Hierarchical Structure of Music by Multi-Resolution Community Detection</h6>
-              <small class="text-muted">2020</small>
-            </div>
-            <p class="mb-1">J. de Berardinis, M. Vamvakaris, E. Coutinho, A. Cangelosi, in Transactions of the International Society for Music Information Retrieval (TISMIR), 3(1), 2020.</p>
-            <small class="text-muted">Article | Code | Slides</small>
-          </a>
-          <a href="https://dl.acm.org/doi/10.1145/3460418.3479334"
-             class="list-group-item list-group-item-action flex-column align-items-start">
-            <div class="d-flex w-100 justify-content-between">
-              <h6 class="mb-1">Polyhymnia Mood – Empowering People to Cope with Depression through Music Listening</h6>
-              <small class="text-muted">2021</small>
-            </div>
-            <p class="mb-1">E. Coutinho, A. Alshukri, J. de Berardinis, C. Dowrick, in Adjunct Proceedings of the 2021 ACM International Joint Conference on Pervasive and Ubiquitous Computing and Proceedings of the 2021 ACM International Symposium on Wearable Computers (UbiComp), 2021.</p>
-            <small class="text-muted">Article | Webpage</small>
-          </a>
-          <a href="https://program.ismir2020.net/poster_2-19.html"
-             class="list-group-item list-group-item-action flex-column align-items-start">
-            <div class="d-flex w-100 justify-content-between">
-              <h6 class="mb-1">The Multiple Voices of Musical Emotions: Source Separation for Improving Music Emotion Recognition Models and their Interpretability</h6>
-              <small class="text-muted">2020</small>
-            </div>
-            <p class="mb-1">J. de Berardinis, E. Coutinho, A. Cangelosi, in Proceedings of the 21st International Society for Music Information Retrieval (ISMIR) conference, pp. 310-317, 2020.</p>
-            <small class="text-muted">Article | Code | Poster | Slides</small>
-          </a>
+      </div>
+      <div class="space-y-4">
+        <div class="bg-white rounded-lg shadow-sm p-6 hover:shadow-md transition-shadow">
+          <div class="flex justify-between items-start mb-3">
+            <h3 class="text-lg font-medium text-gray-900 flex-1 mr-4">
+              <a href="https://www.nature.com/articles/s41597-023-02410-w" class="hover:underline">
+                ChoCo: a Chord Corpus and a Data Transformation Workflow for Musical Harmony Knowledge Graphs
+              </a>
+            </h3>
+            <span class="text-sm text-gray-500 whitespace-nowrap">2023</span>
+          </div>
+          <p class="text-gray-700 mb-3">
+            J. de Berardinis, A. Meroño-Peñuela, A. Poltronieri, V. Presutti, in Scientific Data, vol. 10, 641, 2023.
+          </p>
+          <div class="flex space-x-4 text-sm">
+            <a href="https://www.nature.com/articles/s41597-023-02410-w" class="text-gray-900 hover:underline">Article</a>
+            <span class="text-gray-400">•</span>
+            <span class="text-gray-600">Code</span>
+            <span class="text-gray-400">•</span>
+            <span class="text-gray-600">Data</span>
+            <span class="text-gray-400">•</span>
+            <span class="text-gray-600">Slides</span>
+          </div>
+        </div>
+        
+        <div class="bg-white rounded-lg shadow-sm p-6 hover:shadow-md transition-shadow">
+          <div class="flex justify-between items-start mb-3">
+            <h3 class="text-lg font-medium text-gray-900 flex-1 mr-4">
+              <a href="https://dl.acm.org/doi/abs/10.1145/3543507.3587428" class="hover:underline">
+                The Harmonic Memory: a Knowledge Graph of harmonic patterns as a trustworthy framework for computational creativity
+              </a>
+            </h3>
+            <span class="text-sm text-gray-500 whitespace-nowrap">2023</span>
+          </div>
+          <p class="text-gray-700 mb-3">
+            J. de Berardinis, A. Meroño-Peñuela, A. Poltronieri, V. Presutti, in Proceedings of the ACM Web Conference 2023, pp. 3873-3882.
+          </p>
+          <div class="flex space-x-4 text-sm">
+            <a href="https://dl.acm.org/doi/abs/10.1145/3543507.3587428" class="text-gray-900 hover:underline">Article</a>
+            <span class="text-gray-400">•</span>
+            <span class="text-gray-600">Code</span>
+            <span class="text-gray-400">•</span>
+            <span class="text-gray-600">Slides</span>
+          </div>
+        </div>
+        
+        <div class="bg-white rounded-lg shadow-sm p-6 hover:shadow-md transition-shadow">
+          <div class="flex justify-between items-start mb-3">
+            <h3 class="text-lg font-medium text-gray-900 flex-1 mr-4">
+              <a href="https://ieeexplore.ieee.org/document/9787343" class="hover:underline">
+                Measuring the Structural Complexity of Music: From Structural Segmentations to the Automatic Evaluation of Models for Music Generation
+              </a>
+            </h3>
+            <span class="text-sm text-gray-500 whitespace-nowrap">2022</span>
+          </div>
+          <p class="text-gray-700 mb-3">
+            J. de Berardinis, E. Coutinho, A. Cangelosi, in IEEE/ACM Transactions on Audio, Speech, and Language Processing (TASLP), vol. 30, 2022.
+          </p>
+          <div class="flex space-x-4 text-sm">
+            <a href="https://ieeexplore.ieee.org/document/9787343" class="text-gray-900 hover:underline">Article</a>
+            <span class="text-gray-400">•</span>
+            <span class="text-gray-600">Code</span>
+            <span class="text-gray-400">•</span>
+            <span class="text-gray-600">Slides</span>
+          </div>
+        </div>
+        
+        <div class="bg-white rounded-lg shadow-sm p-6 hover:shadow-md transition-shadow">
+          <div class="flex justify-between items-start mb-3">
+            <h3 class="text-lg font-medium text-gray-900 flex-1 mr-4">
+              <a href="https://transactions.ismir.net/articles/10.5334/tismir.41/" class="hover:underline">
+                Unveiling the Hierarchical Structure of Music by Multi-Resolution Community Detection
+              </a>
+            </h3>
+            <span class="text-sm text-gray-500 whitespace-nowrap">2020</span>
+          </div>
+          <p class="text-gray-700 mb-3">
+            J. de Berardinis, M. Vamvakaris, E. Coutinho, A. Cangelosi, in Transactions of the International Society for Music Information Retrieval (TISMIR), 3(1), 2020.
+          </p>
+          <div class="flex space-x-4 text-sm">
+            <a href="https://transactions.ismir.net/articles/10.5334/tismir.41/" class="text-gray-900 hover:underline">Article</a>
+            <span class="text-gray-400">•</span>
+            <span class="text-gray-600">Code</span>
+            <span class="text-gray-400">•</span>
+            <span class="text-gray-600">Slides</span>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
 
-  <!-- Publications Section -->
-  <section class="container" id="about">
-    <div class="row">
-      <div class="col-lg-10 mx-auto text-center">
-        <h2>About</h2>
-        <p>
-          Before my appointment, I worked on the S+T+ARTS <a href="https://musae.starts.eu">MUSAE</a> project
-          and on the EU H2020 <a href="https://polifonia-project.eu">Polifonia</a>
-          project, where I lead the <a href="https://polifonia-project.eu/pilots/interlink/">INTERLINK</a> pilot.
-          I received a PhD in Machine Learning from the University of Manchester.
-          My dissertation, <em>"<a href="https://research.manchester.ac.uk/en/studentTheses/structural-complexity-in-music-modelling-and-generation-with-deep">Structural complexity in music modelling and
-          generation with deep neural networks</a>"</em> focused on the automatic evaluation of
-          generative models in regard to their ability to compose music with realistic structure.
-        </p>
-        <table class="table">
-          <tbody>
-            <tr>
-              <td class="right aligned time">Jan-June 2024</span></td>
-              <td class="posi">Research Associate</td>
-              <td>University of Manchester, S+T+ARTS <a href="https://musae.starts.eu">MUSAE</a> project</td>
-            </tr>
-            <tr>
-              <td class="right aligned time">May 2021 - 2023</td>
-              <td class="posi">Research Associate</td>
-              <td>King's College London <a href="https://www.kcl.ac.uk/research/dai">(Distributed AI</a>
-                group), under the EU H2020 <a href="https://polifonia-project.eu">Polifonia</a> project</td>
-            </tr>
-            <tr>
-              <td class="right aligned time">2019 - 2024</td>
-              <td class="posi">Honorary Researcher</td>
-              <td>University of Liverpool (<a href="https://amlab.liverpool.ac.uk/">AMLab</a>):
-                Personalised music recommendation for mood regulation</td>
-            </tr>
-            <tr>
-              <td class="right aligned time">2018 - 2021</td>
-              <td class="posi">PhD in Machine Learning</td>
-              <td>University of Manchester (<a href="https://ellis.eu">ELLIS unit</a>),
-                  Machine Learning and Robotics (MLR) group</td>
-            </tr>
-            <tr>
-              <td class="right aligned time">2017 - 2018</td>
-              <td class="posi">Research Assistant</td>
-              <td>University of Camerino: Multi-agent systems for traffic modelling and simulation</td>
-            </tr>
-            <tr>
-              <td class="right aligned time">2014 - 2016</td>
-              <td class="posi">MSc in Computer Science</td>
-              <td>Reykjavik University, University of Camerino (Double Degree)</td>
-            </tr>
-          </tbody>
-        </table>
+  <!-- About Section -->
+  <section class="max-w-4xl mx-auto px-4 py-16" id="about">
+    <div class="mb-12">
+      <h2 class="text-3xl font-light text-gray-900 mb-8 text-center">About</h2>
+      <p class="text-gray-600 mb-8 text-center">
+        Before my appointment, I worked on the S+T+ARTS <a href="https://musae.starts.eu" class="text-gray-900 hover:underline">MUSAE</a> project
+        and on the EU H2020 <a href="https://polifonia-project.eu" class="text-gray-900 hover:underline">Polifonia</a>
+        project, where I lead the <a href="https://polifonia-project.eu/pilots/interlink/" class="text-gray-900 hover:underline">INTERLINK</a> pilot.
+        I received a PhD in Machine Learning from the University of Manchester.
+        My dissertation, <em>"<a href="https://research.manchester.ac.uk/en/studentTheses/structural-complexity-in-music-modelling-and-generation-with-deep" class="text-gray-900 hover:underline">Structural complexity in music modelling and
+        generation with deep neural networks</a>"</em> focused on the automatic evaluation of
+        generative models in regard to their ability to compose music with realistic structure.
+      </p>
+      
+      <div class="bg-white rounded-lg shadow-sm p-8 border border-gray-200">
+        <div class="space-y-6">
+          <div class="flex items-center py-4 border-b border-gray-100">
+            <div class="text-sm text-gray-500 font-medium w-32">Jan-June 2024</div>
+            <div class="font-medium text-gray-900 w-48">Research Associate</div>
+            <div class="text-gray-600 flex-1">University of Manchester, S+T+ARTS <a href="https://musae.starts.eu" class="text-gray-900 hover:underline">MUSAE</a> project</div>
+          </div>
+          <div class="flex items-center py-4 border-b border-gray-100">
+            <div class="text-sm text-gray-500 font-medium w-32">May 2021 - 2023</div>
+            <div class="font-medium text-gray-900 w-48">Research Associate</div>
+            <div class="text-gray-600 flex-1">King's College London <a href="https://www.kcl.ac.uk/research/dai" class="text-gray-900 hover:underline">(Distributed AI</a> group), under the EU H2020 <a href="https://polifonia-project.eu" class="text-gray-900 hover:underline">Polifonia</a> project</div>
+          </div>
+          <div class="flex items-center py-4 border-b border-gray-100">
+            <div class="text-sm text-gray-500 font-medium w-32">2019 - 2024</div>
+            <div class="font-medium text-gray-900 w-48">Honorary Researcher</div>
+            <div class="text-gray-600 flex-1">University of Liverpool (<a href="https://amlab.liverpool.ac.uk/" class="text-gray-900 hover:underline">AMLab</a>): Personalised music recommendation for mood regulation</div>
+          </div>
+          <div class="flex items-center py-4 border-b border-gray-100">
+            <div class="text-sm text-gray-500 font-medium w-32">2018 - 2021</div>
+            <div class="font-medium text-gray-900 w-48">PhD in Machine Learning</div>
+            <div class="text-gray-600 flex-1">University of Manchester (<a href="https://ellis.eu" class="text-gray-900 hover:underline">ELLIS unit</a>), Machine Learning and Robotics (MLR) group</div>
+          </div>
+          <div class="flex items-center py-4 border-b border-gray-100">
+            <div class="text-sm text-gray-500 font-medium w-32">2017 - 2018</div>
+            <div class="font-medium text-gray-900 w-48">Research Assistant</div>
+            <div class="text-gray-600 flex-1">University of Camerino: Multi-agent systems for traffic modelling and simulation</div>
+          </div>
+          <div class="flex items-center py-4">
+            <div class="text-sm text-gray-500 font-medium w-32">2014 - 2016</div>
+            <div class="font-medium text-gray-900 w-48">MSc in Computer Science</div>
+            <div class="text-gray-600 flex-1">Reykjavik University, University of Camerino (Double Degree)</div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Contact Section -->
-  <section class="container bg-light" id="contact">
-    <div class="row">
-      <div class="col-lg-8 mx-auto text-center">
-        <h2>Contact</h2>
-        <div class="container" id="social-icons">
-          <ul class="list-inline">
-            <a href="mailto:jacodb@liverpool.ac.uk">
-              <li class="list-inline-item bi-envelope h3"></li></a>
-            <a href="https://scholar.google.co.uk/citations?user=eYJ1k7wAAAAJ&hl=it&oi=ao">
-              <li class="list-inline-item bi-google h3"></li></a>
-            <a href="https://twitter.com/jonnybluesman">
-              <li class="list-inline-item bi-twitter h3"></li></a>
-            <a href="https://github.com/jonnybluesman">
-              <li class="list-inline-item bi-github h3"></li></a>
-          </ul>
-        </div>
-        <p>
+  <section class="bg-gray-50 py-16" id="contact">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-light text-gray-900 mb-8">Contact</h2>
+      
+      <div class="flex justify-center space-x-6 mb-8">
+        <a href="mailto:jacodb@liverpool.ac.uk" class="text-gray-600 hover:text-gray-900 transition-colors">
+          <i class="bi bi-envelope text-2xl"></i>
+        </a>
+        <a href="https://scholar.google.co.uk/citations?user=eYJ1k7wAAAAJ&hl=it&oi=ao" class="text-gray-600 hover:text-gray-900 transition-colors">
+          <i class="bi bi-google text-2xl"></i>
+        </a>
+        <a href="https://twitter.com/jonnybluesman" class="text-gray-600 hover:text-gray-900 transition-colors">
+          <i class="bi bi-twitter text-2xl"></i>
+        </a>
+        <a href="https://github.com/jonnybluesman" class="text-gray-600 hover:text-gray-900 transition-colors">
+          <i class="bi bi-github text-2xl"></i>
+        </a>
+      </div>
+      
+      <div class="bg-white rounded-lg shadow-sm p-8 border border-gray-200">
+        <p class="text-gray-700 mb-4">
           I am actively seeking motivated students to work on Music AI projects.
           If you are passionate about exploring any of the research topics listed
-          <a href="#research">above</a> or have a unique project proposal in mind,
+          <a href="#research" class="text-gray-900 hover:underline">above</a> or have a unique project proposal in mind,
           I encourage you to reach out!
-          <br>
-          Connect with me via email at <a href="mailto:jacodb@liverpool.ac.uk">jacodb@liverpool.ac.uk</a>.
+        </p>
+        <p class="text-gray-600">
+          Connect with me via email at <a href="mailto:jacodb@liverpool.ac.uk" class="text-gray-900 hover:underline">jacodb@liverpool.ac.uk</a>.
         </p>
       </div>
     </div>
   </section>
 
   <!-- Footer Section -->
-  <footer>
-    <div class="container">
-      <p>&copy; 2024, Jacopo de Berardinis</p>
+  <footer class="bg-gray-900 text-white py-8">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <p class="text-gray-300">&copy; 2025, Jacopo de Berardinis</p>
     </div>
   </footer>
 
-  <!-- Bootstrap JS and dependencies -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script>
+    function toggleAccordion(id) {
+      const content = document.getElementById(id + '-content');
+      const icon = document.getElementById(id + '-icon');
+      
+      if (content.classList.contains('hidden')) {
+        content.classList.remove('hidden');
+        icon.classList.remove('bi-chevron-down');
+        icon.classList.add('bi-chevron-up');
+      } else {
+        content.classList.add('hidden');
+        icon.classList.remove('bi-chevron-up');
+        icon.classList.add('bi-chevron-down');
+      }
+    }
+  </script>
 </body>
 </html>
